@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>managment app dom</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <div class="add_fild">
+                <form class="fild_form" action="#">
+                    <input type="text" placeholder="Add a new task" class="add_input" id="added">
+                </form>
+            </div>
+            <div class="filtering_task">
+                <button type="button" id="showAll" class="btn active_filter">All</button>
+                <button type="button" id="filterPendeing" class="btn">Pending</button>
+                <button type="button" id="filterCompleted" class="btn">Completed</button>
+                <div class="clear_task">
+                    <button type="button" id="clearAll" class="clear_all">clear All</button>
+                </div>
+            </div>
+            <div class="managment_task" id="managmentTask">
+                <p id="inform" class="inform_text">
+                    You don't have any task here
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
